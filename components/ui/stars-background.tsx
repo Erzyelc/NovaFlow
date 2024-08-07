@@ -99,8 +99,9 @@ export const StarsBackground: React.FC<StarsBackgroundProps> = ({
     }
 
     return () => {
-      if (containerRef.current) {
-        resizeObserver.unobserve(containerRef.current);
+      const currentContainerRef = containerRef.current;
+      if (currentContainerRef) {
+        resizeObserver.unobserve(currentContainerRef);
       }
     };
   }, [
