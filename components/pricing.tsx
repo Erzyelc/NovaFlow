@@ -28,7 +28,9 @@ const PricingToggle = memo(
   ({ enabled, setEnabled, color }: PricingToggleProps) => (
     <div className="flex items-center">
       <span
-        className={`mr-2 font-bold ${enabled ? "text-neutral-500/60" : ""}`}
+        className={`mr-2 font-bold ${
+          enabled ? "text-neutral-500/60" : "text-neutral-300"
+        }`}
       >
         Monthly
       </span>
@@ -52,7 +54,9 @@ const PricingToggle = memo(
         </div>
       </label>
       <span
-        className={`ml-2 font-bold ${enabled ? "" : "text-neutral-500/60"}`}
+        className={`ml-2 font-bold ${
+          enabled ? "text-neutral-300" : "text-neutral-200/60"
+        }`}
       >
         Yearly
       </span>
@@ -61,26 +65,26 @@ const PricingToggle = memo(
 );
 
 const PricingCard = memo(({ option, enabled }: PricingCardProps) => (
-  <div className="grid h-full w-full grid-cols-1 rounded-xl border border-neutral-300/50 dark:border-neutral-700/50 lg:grid-cols-5">
-    <div className="col-span-2 flex flex-col justify-between gap-y-10 rounded-t-xl bg-neutral-50 p-5 dark:bg-neutral-900 lg:rounded-t-none lg:rounded-bl-xl lg:rounded-tl-xl">
+  <div className="grid h-full w-full grid-cols-1 rounded-xl  shadow-2xl  lg:grid-cols-5">
+    <div className="col-span-2 flex flex-col justify-between gap-y-10 rounded-t-xl bg-gradient-to-tr  from-[#9089fc] to-[#ff80b5] p-5 dark:bg-neutral-900 lg:rounded-t-none lg:rounded-bl-xl lg:rounded-tl-xl">
       <div className="flex flex-col gap-y-2">
-        <p className="text-2xl font-semibold text-black dark:text-white">
+        <p className="text-2xl font-semibold text-neutral-100 dark:text-white">
           {option.name}
         </p>
-        <p className="mx-0 max-w-md font-medium tracking-tight text-neutral-500 dark:text-neutral-400">
+        <p className="mx-0 max-w-md font-medium tracking-tight text-[#1b263b] dark:text-neutral-400">
           {option.description}
         </p>
       </div>
       <div className="flex flex-col gap-y-2">
-        <h3 className="text-sm font-medium text-black dark:text-white">
-          <span className="text-3xl font-[620] text-black dark:text-white">
+        <h3 className="text-sm font-medium text-[#1b263b] dark:text-white">
+          <span className="text-3xl font-[620] text-[#1b263b] dark:text-white">
             {enabled ? option.yearlyPrice : option.price}
-            <span className="text-sm font-medium text-neutral-500 dark:text-neutral-400">
+            <span className="text-sm font-medium text-neutral-600 dark:text-neutral-400">
               {enabled ? "/year" : "/month"}
             </span>
           </span>
         </h3>
-        <button className="my-2 flex h-10 w-full items-center justify-center rounded-lg border border-neutral-500 bg-neutral-800 text-base font-bold text-white transition duration-100 hover:shadow-md hover:drop-shadow-md dark:bg-neutral-100 dark:text-neutral-800">
+        <button className="my-2 flex h-10 w-full items-center justify-center rounded-lg   bg-[#415a77] text-base font-bold text-white transition duration-100 hover:shadow-md hover:drop-shadow-md dark:bg-neutral-100 dark:text-neutral-800">
           <span className="tracking-tight">Choose Plan</span>
           <ArrowRightIcon className="ml-2" />
         </button>
@@ -93,13 +97,11 @@ const PricingCard = memo(({ option, enabled }: PricingCardProps) => (
         </p>
       )}
       {option.features.map((feature, index) => (
-        <div key={index} className="flex gap-x-3">
+        <div key={index} className="flex gap-x-3 ">
           <div className="flex items-center justify-center">
             <CheckCircledIcon className="h-6 w-6 text-green-500" />
           </div>
-          <p className="font-medium text-neutral-900 dark:text-white">
-            {feature}
-          </p>
+          <p className="font-medium text-gray-400 dark:text-white">{feature}</p>
         </div>
       ))}
     </div>
@@ -139,7 +141,7 @@ export function Pricing() {
   ];
 
   return (
-    <section className="mx-auto max-w-5xl py-10">
+    <section className="mx-auto max-w-5xl py-10" id="pricing">
       <div className="flex flex-col gap-y-2">
         <div className="mx-auto max-w-5xl text-center">
           <h4 className="text-xl font-bold tracking-tight text-gray-400 dark:text-white">

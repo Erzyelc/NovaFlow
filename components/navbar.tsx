@@ -28,25 +28,19 @@ export default function Navbar() {
                 href="#"
                 className="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-[#e0e1dd]"
               >
-                Dashboard
+                Features
               </a>
               <a
                 href="#"
                 className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-400 hover:border-gray-300 hover:text-[#e0e1dd]"
               >
-                Team
+                Reviews
               </a>
               <a
                 href="#"
                 className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-400 hover:border-gray-300 hover:text-[#e0e1dd]"
               >
-                Projects
-              </a>
-              <a
-                href="#"
-                className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-400 hover:border-gray-300 hover:text-[#e0e1dd]"
-              >
-                Calendar
+                Pricing
               </a>
             </div>
           </div>

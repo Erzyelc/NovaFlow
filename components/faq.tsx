@@ -12,22 +12,22 @@ const faqs = [
     section: "General",
     qa: [
       {
-        question: "What is Magic UI?",
+        question: "What is NovaFlow?",
         answer: (
           <span>
-            Magic UI is a React-based UI library designed to help developers
-            build beautiful and interactive user interfaces with ease. It offers
-            a wide range of customizable components.
+            NovaFlow is a modern Cloud Solutions library that provides a
+            collection of components and utilities to help you build beautiful
+            and accessible dashboards.
           </span>
         ),
       },
       {
-        question: "How can I get started with Magic UI?",
+        question: "How can I get started with NovaFlow",
         answer: (
           <span>
-            To get started, install the Magic UI package in your React project
-            using your package manager. Explore our documentation for guides on
-            using components and customizing your UI.
+            To get started with Novaflow, simply sign up for an account and
+            start building your first project. Our documentation provides
+            detailed instructions on how to get started.
           </span>
         ),
       },
@@ -37,12 +37,12 @@ const faqs = [
     section: "Support",
     qa: [
       {
-        question: "Does Magic UI offer technical support?",
+        question: "Does NovaFlow offer technical support?",
         answer: (
           <span>
-            While Magic UI is primarily a self-serve library, we provide
-            extensive documentation and a community forum where you can ask
-            questions and share insights with other developers.
+            Yes! When you sign up for a paid account, you will have one of our
+            trusted advisors assigned to you to help you with any technical
+            issues you may have.
           </span>
         ),
       },
@@ -52,12 +52,12 @@ const faqs = [
     section: "Customization",
     qa: [
       {
-        question: "Can I customize Magic UI components?",
+        question: "Can I customize NovaFlow components?",
         answer: (
           <span>
-            Absolutely! Magic UI is built with customization in mind. You can
-            easily override styles and behaviors of components to match your
-            design requirements.
+            Absolutely! NovaFlow components are fully customizable. You can use
+            our utility classes to change the appearance of the components to
+            match your brand.
           </span>
         ),
       },
@@ -101,7 +101,7 @@ export function FAQ() {
           <div className="container mx-auto my-12 max-w-[600px] space-y-12">
             {faqs.map((faq, idx) => (
               <section key={idx} id={"faq-" + faq.section}>
-                <h2 className="mb-4 text-left text-base font-semibold tracking-tight text-foreground/60">
+                <h2 className="mb-4 text-left text-base font-semibold tracking-tight text-gray-400/80">
                   {faq.section}
                 </h2>
                 <Accordion
@@ -113,7 +113,7 @@ export function FAQ() {
                     <AccordionItem
                       key={idx}
                       value={faq.question}
-                      className="w-full max-w-[600px]"
+                      className="w-full max-w-[600px] text-gray-300"
                     >
                       <AccordionTrigger>{faq.question}</AccordionTrigger>
                       <AccordionContent>{faq.answer}</AccordionContent>
@@ -123,10 +123,10 @@ export function FAQ() {
               </section>
             ))}
           </div>
-          <h4 className="mb-12 text-center text-sm font-medium tracking-tight text-foreground/80">
+          <h4 className="mb-12 text-center text-sm text-gray-400/80 font-medium tracking-tight ">
             Still have questions? Email us at{" "}
             <a href="mailto:support@example.com" className="underline">
-              support@example.com
+              support@novaflow.com
             </a>
           </h4>
         </div>

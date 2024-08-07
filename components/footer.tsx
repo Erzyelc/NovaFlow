@@ -96,7 +96,7 @@ const footerSocials = [
 
 export function Footer() {
   return (
-    <footer className="border-t">
+    <footer className="border-t bg-[#1F2937]">
       <div className="mx-auto w-full max-w-screen-xl px-4">
         <div className="gap-4 p-4 py-16 sm:pb-16 md:flex md:justify-between">
           <div className="mb-12 flex flex-col gap-4">
@@ -125,7 +125,7 @@ export function Footer() {
                       size: "lg",
                       variant: "default",
                     }),
-                    "mt-4 w-full rounded-full px-6 text-sm font-semibold tracking-tighter transition-all ease-out  bg-[#415a77] "
+                    "mt-4 w-full rounded-md px-6 text-sm font-semibold tracking-tighter transition-all ease-out  bg-[#415a77] hover:bg-[#415a77]/80"
                   )}
                 >
                   Start free trial
@@ -137,7 +137,7 @@ export function Footer() {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
             {footerNavs.map((nav) => (
               <div key={nav.label}>
-                <h2 className="mb-6 text-sm font-semibold uppercase text-neutral-900 dark:text-white">
+                <h2 className="mb-6 text-sm font-semibold uppercase text-gray-400/80 dark:text-white">
                   {nav.label}
                 </h2>
                 <ul className="grid gap-2">
@@ -164,7 +164,7 @@ export function Footer() {
               <a
                 key={social.name}
                 href={social.href}
-                className="fill-neutral-500 text-neutral-500 hover:fill-neutral-900 hover:text-neutral-900 dark:hover:fill-neutral-600 dark:hover:text-neutral-600"
+                className="fill-neutral-500 text-neutral-500 hover:fill-neutral-500/80 hover:text-neutral-900 dark:hover:fill-neutral-600 dark:hover:text-neutral-600"
               >
                 {social.icon}
                 <span className="sr-only">{social.name}</span>
