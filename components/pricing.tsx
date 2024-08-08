@@ -152,7 +152,7 @@ export function Pricing() {
             Simple pricing for everyone.
           </h2>
 
-          <p className="mt-6 text-xl leading-8 text-gray-400 dark:text-white">
+          <p className="mt-6 text-xl leading-8 text-gray-400 dark:text-white hidden sm:inline">
             Choose an <strong>affordable plan</strong> that&apos;s packed with
             the best features for engaging your audience, creating customer
             loyalty, and driving sales.

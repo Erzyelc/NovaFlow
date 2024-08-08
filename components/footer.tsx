@@ -96,7 +96,7 @@ const footerSocials = [
 
 export function Footer() {
   return (
-    <footer className="border-t bg-[#1F2937]">
+    <footer className=" ">
       <div className="mx-auto w-full max-w-screen-xl px-4">
         <div className="gap-4 p-4 py-16 sm:pb-16 md:flex md:justify-between">
           <div className="mb-12 flex flex-col gap-4">
@@ -158,7 +158,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 border-t py-4 sm:flex sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-2 border-t border-[#e0e1dd] py-4 sm:flex sm:flex-row sm:items-center sm:justify-between">
           <div className="flex space-x-5 sm:mt-0 sm:justify-center">
             {footerSocials.map((social) => (
               <a
