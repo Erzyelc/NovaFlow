@@ -26,7 +26,7 @@ export default function page() {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
-          <div className="bg-[#192231] px-6 py-12 shadow-2xl sm:rounded-lg sm:px-12">
+          <div className=" px-6 py-12 shadow-2xl sm:rounded-lg sm:px-12">
             <form action="#" method="POST" className="space-y-6">
               <div>
                 <label
@@ -42,7 +42,7 @@ export default function page() {
                     type="email"
                     required
                     autoComplete="email"
-                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400 focus:ring-2  sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md  py-1.5 bg-[#1b263b] text-gray-400 shadow-sm  placeholder:text-gray-400  sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -61,7 +61,7 @@ export default function page() {
                     type="password"
                     required
                     autoComplete="current-password"
-                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm  ring-inset ring-gray-300 placeholder:text-gray-400   sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md  py-1.5 text-gray-400 shadow-sm bg-[#1b263b]  placeholder:text-gray-400   sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
