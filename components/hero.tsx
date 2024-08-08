@@ -16,7 +16,7 @@ export default function Example() {
 
   return (
     <div className="">
-      <header className="absolute inset-x-0 top-0 z-50 mx-auto max-w-7xl">
+      {/* <header className="absolute inset-x-0 top-0 z-50 mx-auto max-w-7xl">
         <nav
           aria-label="Global"
           className="flex items-center justify-between p-6 lg:px-8"
@@ -46,18 +46,24 @@ export default function Example() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-white"
+                className="text-sm font-semibold leading-6 text-gray-200 hover:text-gray-400/80"
               >
                 {item.name}
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-8">
             <a
               href="/login"
-              className="text-sm font-semibold leading-6 text-white"
+              className="text-sm font-semibold leading-6 text-gray-200 hover:text-gray-400/80"
             >
-              Log in <span aria-hidden="true">&rarr;</span>
+              Log in
+            </a>
+            <a
+              href="/signup"
+              className="text-sm rounded-md bg-[#415a77] px-3.5 py-1.5  font-semibold text-white shadow-sm hover:bg-[#415a77]/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+            >
+              Sign Up <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </nav>
@@ -111,7 +117,7 @@ export default function Example() {
             </div>
           </DialogPanel>
         </Dialog>
-      </header>
+      </header> */}
 
       <div className="relative isolate pt-14">
         <div
@@ -140,12 +146,12 @@ export default function Example() {
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="/signup"
-                  className="rounded-md bg-[#415a77] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#415a77]/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                  className="rounded-md bg-[#415a77] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#415a77]/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
                 >
                   Get started
                 </a>
                 <a
-                  href="#"
+                  href="/about"
                   className="text-sm font-semibold leading-6 text-white"
                 >
                   Learn more <span aria-hidden="true">→</span>

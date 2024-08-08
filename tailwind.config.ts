@@ -75,12 +75,18 @@ const config = {
           from: { transform: "translateY(0)" },
           to: { transform: "translateY(calc(-100% - var(--gap)))" },
         },
+        float: {
+          "0%": { transform: "translateY(3%)" },
+          "50%": { transform: "translateY(-3%)" },
+          "100%": { transform: "translateY(3%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         marquee: "marquee var(--duration) linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+        float: "float 2s ease-in-out infinite",
       },
     },
   },
