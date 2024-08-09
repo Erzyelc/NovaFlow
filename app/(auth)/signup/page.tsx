@@ -1,7 +1,7 @@
 export default function page() {
   return (
     <>
-      <div className="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8">
+      <div className="flex min-h-full flex-1 flex-col justify-center  py-20 sm:py-12 my-0 sm:my-20 sm:px-6 lg:px-8">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -42,7 +42,7 @@ export default function page() {
                     type="fullname"
                     required
                     autoComplete="fullname"
-                    className="block w-full rounded-md  py-1.5 text-gray-400 shadow-sm  placeholder:text-gray-400   sm:text-sm sm:leading-6 bg-[#1b263b]"
+                    className="block w-full rounded-md  py-1.5 text-gray-400 shadow-sm  placeholder:text-gray-400   sm:text-sm sm:leading-6 bg-white"
                   />
                 </div>
               </div>
@@ -61,7 +61,7 @@ export default function page() {
                     type="email"
                     required
                     autoComplete="email"
-                    className="block w-full rounded-md  py-1.5 text-gray-400 shadow-sm  placeholder:text-gray-400  bg-[#1b263b] sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md  py-1.5 text-gray-400 shadow-sm  placeholder:text-gray-400  bg-white sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -80,7 +80,7 @@ export default function page() {
                     type="password"
                     required
                     autoComplete="current-password"
-                    className="block w-full rounded-md  py-1.5 text-gray-400 shadow-sm bg-[#1b263b]  ring-gray-300 placeholder:text-gray-400   sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md  py-1.5 text-gray-400 shadow-sm bg-white  ring-gray-300 placeholder:text-gray-400   sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -105,7 +105,7 @@ export default function page() {
               <div>
                 <button
                   type="submit"
-                  className="flex w-full justify-center rounded-md bg-[#415a77] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#415a77]/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="flex w-full justify-center rounded-md bg-whitepx-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#415a77]/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Sign Up
                 </button>

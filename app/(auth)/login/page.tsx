@@ -1,7 +1,7 @@
 export default function page() {
   return (
     <>
-      <div className="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8">
+      <div className="flex min-h-full flex-1 flex-col justify-center py-20 sm:py-12 my-0 sm:my-20 sm:px-6 lg:px-8">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -42,7 +42,7 @@ export default function page() {
                     type="email"
                     required
                     autoComplete="email"
-                    className="block w-full rounded-md  py-1.5 bg-[#1b263b] text-gray-400 shadow-sm  placeholder:text-gray-400  sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md  py-1.5 bg-white text-gray-400 shadow-sm  placeholder:text-gray-400  sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -61,7 +61,7 @@ export default function page() {
                     type="password"
                     required
                     autoComplete="current-password"
-                    className="block w-full rounded-md  py-1.5 text-gray-400 shadow-sm bg-[#1b263b]  placeholder:text-gray-400   sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md  py-1.5 text-gray-400 shadow-sm bg-white  placeholder:text-gray-400   sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
