@@ -41,7 +41,7 @@ export default function HeroAbout() {
             </div>
 
             <h1 className="text-4xl font-bold tracking-tight text-[#e0e1dd] sm:text-6xl">
-              Turning security into innovation
+              Here&rsquo;s our story
             </h1>
             {/* Rings illustration */}
             <div className="inline-flex items-center justify-center relative">

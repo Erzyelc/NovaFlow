@@ -62,7 +62,7 @@ export default function Cta02() {
             <div>
               <a
                 className="rounded-md bg-[#415a77] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#415a77]/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
-                href="#0"
+                href="/signup"
               >
                 Start Building <span aria-hidden="true">→</span>
               </a>

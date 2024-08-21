@@ -7,9 +7,9 @@ import React, { useState } from "react";
 
 const navigation = [
   { name: "About", href: "/about" },
-  { name: "Features", href: "#features" },
-  { name: "Reviews", href: "#reviews" },
-  { name: "Pricing", href: "#pricing" },
+  { name: "Features", href: "/features" },
+  { name: "Reviews", href: "/reviews" },
+  { name: "Pricing", href: "/pricing" },
 ];
 
 const Navbar = () => {
